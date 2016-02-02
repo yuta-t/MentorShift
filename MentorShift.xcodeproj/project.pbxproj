@@ -12,6 +12,9 @@
 		01EE381C1C6110CB00F97A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EE381A1C6110CB00F97A38 /* LaunchScreen.storyboard */; };
 		01EE38271C6110CB00F97A38 /* MentorShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE38261C6110CB00F97A38 /* MentorShiftTests.swift */; };
 		01EE38321C6110CB00F97A38 /* MentorShiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE38311C6110CB00F97A38 /* MentorShiftUITests.swift */; };
+		01EE38431C61121900F97A38 /* ShiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE38421C61121900F97A38 /* ShiftListViewController.swift */; };
+		01EE38451C61124100F97A38 /* ShiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE38441C61124100F97A38 /* ShiftListView.swift */; };
+		01EE38471C61124C00F97A38 /* ShiftListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE38461C61124C00F97A38 /* ShiftListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		01EE382D1C6110CB00F97A38 /* MentorShiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MentorShiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EE38311C6110CB00F97A38 /* MentorShiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorShiftUITests.swift; sourceTree = "<group>"; };
 		01EE38331C6110CB00F97A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EE38421C61121900F97A38 /* ShiftListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListViewController.swift; sourceTree = "<group>"; };
+		01EE38441C61124100F97A38 /* ShiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListView.swift; sourceTree = "<group>"; };
+		01EE38461C61124C00F97A38 /* ShiftListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		01EE38101C6110CB00F97A38 /* MentorShift */ = {
 			isa = PBXGroup;
 			children = (
+				01EE38401C6111A900F97A38 /* Scenes */,
 				01EE383F1C61111400F97A38 /* Application */,
 			);
 			path = MentorShift;
@@ -125,6 +132,25 @@
 				01EE381D1C6110CB00F97A38 /* Info.plist */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		01EE38401C6111A900F97A38 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				01EE38411C6111B000F97A38 /* ShiftList */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		01EE38411C6111B000F97A38 /* ShiftList */ = {
+			isa = PBXGroup;
+			children = (
+				01EE38421C61121900F97A38 /* ShiftListViewController.swift */,
+				01EE38441C61124100F97A38 /* ShiftListView.swift */,
+				01EE38461C61124C00F97A38 /* ShiftListViewModel.swift */,
+				01EE38481C61125600F97A38 /* ShiftList.storyboard */,
+			);
+			name = ShiftList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01EE38121C6110CB00F97A38 /* AppDelegate.swift in Sources */,
+				01EE38471C61124C00F97A38 /* ShiftListViewModel.swift in Sources */,
+				01EE38431C61121900F97A38 /* ShiftListViewController.swift in Sources */,
+				01EE38451C61124100F97A38 /* ShiftListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
