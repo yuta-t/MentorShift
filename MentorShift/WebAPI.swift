@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 
 struct WebAPI {
-    static func responseJSON(url: String, completed: (AnyObject?) -> Void) {
-        Alamofire.request(.GET, url)
+    static func responseJSON(url: String, parameters: [String: AnyObject],completed: (AnyObject?) -> Void) {
+        Alamofire.request(.GET, url, parameters: parameters)
         .authenticate(user: "tcamp", password: "master")
         .responseJSON { response in
             completed(response.result.value)
