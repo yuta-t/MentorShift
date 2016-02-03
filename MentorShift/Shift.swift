@@ -35,10 +35,10 @@ struct Shift {
         self.role = Role(rawValue: role)!
     }
     
-    static func fetch() -> [Shift] {
+    static func fetch(completed: ([Shift]) -> Void) {
         var shifts: [Shift] = []
-        
         let params = ["user_id": 55]
+        
         WebAPI.responseJSON(Shift.url, parameters: params) { result in
             guard let result = result else { return }
             
@@ -46,17 +46,26 @@ struct Shift {
                 let shift = Shift(json: json)
                 shifts.append(shift)
             }
+            
+            completed(shifts)
         }
-        
-        return shifts
     }
 }
 
 extension Shift {
     enum Role: String {
         case Web = "rails_site"
-        case Remote = "rails_remote"
+        case Online = "rails_remote"
         case Breaktime = "breaktime"
         case iOS = "ios_site"
+        
+        var text: String {
+            switch self {
+            case .Web: return "Web"
+            case .Online: return "Online"
+            case .Breaktime: return "Breaktime"
+            case .iOS: return "iOS"
+            }
+        }
     }
 }

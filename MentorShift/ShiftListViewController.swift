@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Bond
 
 final class ShiftListViewController: UIViewController {
     private let viewModel = ShiftListViewModel()
@@ -18,6 +19,15 @@ final class ShiftListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let shiftListView = view as! ShiftListView
+        
+        viewModel.shifts.bindTo(shiftListView.table) { indexPath, _, _ -> UITableViewCell in
+            return self.viewModel.createCell(indexPath)
+        }
+
+        Shift.fetch { shifts in
+            self.viewModel.shifts.extend([ObservableArray<Shift>(shifts)])
+        }
     }
 
     override func didReceiveMemoryWarning() {
