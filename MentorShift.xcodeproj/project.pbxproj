@@ -21,6 +21,7 @@
 		01EE38511C61165200F97A38 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE38501C61165200F97A38 /* WebAPI.swift */; };
 		01EE38541C6116E200F97A38 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EE38521C6116E200F97A38 /* Alamofire.framework */; };
 		01EE38551C6116E200F97A38 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EE38531C6116E200F97A38 /* SwiftyJSON.framework */; };
+		01EE38591C6120AE00F97A38 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01EE38581C6120AE00F97A38 /* Bond.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		01EE38501C61165200F97A38 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 		01EE38521C6116E200F97A38 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		01EE38531C6116E200F97A38 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		01EE38581C6120AE00F97A38 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = ../Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EE38591C6120AE00F97A38 /* Bond.framework in Frameworks */,
 				01EE38541C6116E200F97A38 /* Alamofire.framework in Frameworks */,
 				01EE38551C6116E200F97A38 /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -117,6 +120,7 @@
 				01EE384A1C6114FE00F97A38 /* Models */,
 				01EE384D1C6115AC00F97A38 /* Extensions */,
 				01EE38571C61170100F97A38 /* Frameworks */,
+				01EE38581C6120AE00F97A38 /* Bond.framework */,
 				01EE383F1C61111400F97A38 /* Application */,
 			);
 			path = MentorShift;
@@ -163,9 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				01EE38421C61121900F97A38 /* ShiftListViewController.swift */,
-				01EE38441C61124100F97A38 /* ShiftListView.swift */,
 				01EE38461C61124C00F97A38 /* ShiftListViewModel.swift */,
 				01EE38481C61125600F97A38 /* ShiftList.storyboard */,
+				01EE38441C61124100F97A38 /* ShiftListView.swift */,
 			);
 			name = ShiftList;
 			sourceTree = "<group>";
@@ -336,6 +340,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
 			);
 			outputPaths = (
 			);
