@@ -62,7 +62,7 @@
 		01EE38501C61165200F97A38 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 		01EE38521C6116E200F97A38 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		01EE38531C6116E200F97A38 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		01EE38581C6120AE00F97A38 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = ../Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
+		01EE38581C6120AE00F97A38 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,6 @@
 				01EE384A1C6114FE00F97A38 /* Models */,
 				01EE384D1C6115AC00F97A38 /* Extensions */,
 				01EE38571C61170100F97A38 /* Frameworks */,
-				01EE38581C6120AE00F97A38 /* Bond.framework */,
 				01EE383F1C61111400F97A38 /* Application */,
 			);
 			path = MentorShift;
@@ -194,6 +193,7 @@
 		01EE38571C61170100F97A38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01EE38581C6120AE00F97A38 /* Bond.framework */,
 				01EE38521C6116E200F97A38 /* Alamofire.framework */,
 				01EE38531C6116E200F97A38 /* SwiftyJSON.framework */,
 			);
